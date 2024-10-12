@@ -4,7 +4,7 @@ from flask import request
 from flask import jsonify
 
 
-model_file = '/home/stefano/Documents/Tutorial/data-talk-club/ml-zoomcamp-2024/lesson 05/model_C=1.0.bin'
+model_file = 'model_C=1.0.bin'
 
 
 with open(model_file, 'rb') as f_in:
