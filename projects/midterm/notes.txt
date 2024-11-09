@@ -1,0 +1,10 @@
+per lanciare l'applicazione Flask:
+
+gunicorn --bind 0.0.0.0:9696 predict:app
+
+Buildare Docker:
+docker build -t midterm .
+
+Lanciare Docker:
+docker run -d -p 9696:9696 midterm
+
