@@ -115,7 +115,7 @@ multiple_patients = generate_multiple_patients(n=50)
 
 # print(single_patient)
 
-url = "http://0.0.0.0:9696/predict"
+url = "http://217.160.226.158:9696/predict"
 response = requests.post(url, json=single_patient).json()
 
 print(response)

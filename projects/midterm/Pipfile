@@ -10,6 +10,7 @@ scikit-learn = "*"
 numpy = "*"
 flask = "*"
 gunicorn = "*"
+requests = "*"
 
 [dev-packages]
 
