@@ -1,6 +1,7 @@
 import numpy as np
 import pandas as pd
 import requests
+import os
 
 def generate_random_patient():
     """
@@ -108,8 +109,10 @@ single_patient = generate_random_patient()
 # Per fare predizioni su nuovi dati
 multiple_patients = generate_multiple_patients(n=50)
 
+host = os.getenv("HOST")
 
-url = "http://217.160.226.158:9696/predict"
+
+url = f"{host}:9696/predict"
 response = requests.post(url, json=single_patient).json()
 
 print(response)
