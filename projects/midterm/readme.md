@@ -77,3 +77,7 @@ The web service have been deployed on a Ionos VPS server using Docker.
 The `diagnosis.py` file contains the request to the public url where the Flask service is deployed. 
 
 The file generates a single patient json data, sends the request to the public IP and gets back a json with a predicted diagnosis. 
+
+This is an example of a Postman request:
+
+![Postman request screenshot](postman.png)
