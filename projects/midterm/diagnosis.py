@@ -107,15 +107,10 @@ single_patient = generate_random_patient()
 
 # Per fare predizioni su nuovi dati
 multiple_patients = generate_multiple_patients(n=50)
-# predictions = loaded_model.predict(pd.DataFrame(pazienti))
-# print(predictions)
 
-# prediction = loaded_model.predict(pd.DataFrame([generate_random_patient()]))
-# print(prediction)
-
-# print(single_patient)
 
 url = "http://217.160.226.158:9696/predict"
 response = requests.post(url, json=single_patient).json()
 
 print(response)
+# print(single_patient)
