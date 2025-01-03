@@ -8,7 +8,7 @@ import os
 app = Flask(__name__)
 
 # Load your Keras model
-model_path = "./models/xception_v3_05_0.606.keras"
+model_path = "xception_v3_05_0.606.keras"
 try:
     model = keras.models.load_model(model_path)
     print("Model loaded successfully.")
