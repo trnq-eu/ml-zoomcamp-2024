@@ -112,4 +112,6 @@ I also integrated an existing dataset from Kaggle ([https://www.kaggle.com/datas
 - The saved model was inspected to ensure the correct input and output signatures.
 - Due to library incompatibility issues, I had to renounce to deploy the model using Tensorflow Serving. I created a Flask API using the original .keras model instead (see `app.py` file)
 
-Here you can find a screenshot of the deployed model 
+Here you can find a screenshot of a curl request to the deployed model:
+
+![Request screenshot](pictures/flask_screenshot_2.png)
