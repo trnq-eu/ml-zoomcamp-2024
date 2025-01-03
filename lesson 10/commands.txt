@@ -29,3 +29,4 @@ kubectl describe pod subscription-7b74b5846-gmjxp
 
 kind load docker-image zoomcamp-model:3.11.5-hw10
 
+kubectl port-forward service/ping 8080:80
